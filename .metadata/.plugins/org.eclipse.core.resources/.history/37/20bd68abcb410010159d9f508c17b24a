@@ -1,0 +1,52 @@
+package game.component;
+
+import javax.swing.JComponent;
+
+public class PanelGame extends JComponent {
+	
+	private int width;
+	private int height;
+	private Thread thread;
+	private boolean start = true;
+	
+	// Game FPF
+	private final int FPS = 60;
+	private final int TARGET_TIME = 1000000000 / FPS;
+	
+	public void start() {
+		width = getWidth();
+		height = getHeight();
+		thread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				while(start) {
+					long startTime = System.nanoTime();
+					drawBackground();
+					
+					sleep(TARGET_TIME); // For tear
+				}
+			}
+		});
+		thread.start();
+	}
+	
+	private void drawBackgorund() {
+		
+	}
+	
+	private void drawGame() {
+		
+	}
+	
+	private void render() {
+		
+	}
+	
+	private void sleep(long speed) {
+		try {
+			Thread.sleep(speed);
+		} catch (InterruptedException ex) {
+			System.err.println(ex);
+		}
+	}
+}

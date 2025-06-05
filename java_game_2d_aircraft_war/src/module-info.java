@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module java_game_2d_aircraft_war {
+	requires java.desktop;
+}

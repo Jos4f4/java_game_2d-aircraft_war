@@ -1,0 +1,23 @@
+package game.main;
+
+import javax.swing.JFrame;
+
+public class Main extends JFrame {
+	
+	public Main() {
+		init();
+	}
+	
+	private void init() {
+		setTitle("Java 2D Game");
+		setSize(1366, 768);
+		setLocationRelativeTo(null);
+		setResizable(false);
+	}
+	
+	public static void main(String[] args) {
+		Main main = new Main();
+		main.setVisible(true);
+		
+	}
+}
