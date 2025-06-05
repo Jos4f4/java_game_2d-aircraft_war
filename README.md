@@ -1,2 +1,2 @@
-# java_game_2d-aircraft_war1
+# java_game_2d-aircraft_war
 
