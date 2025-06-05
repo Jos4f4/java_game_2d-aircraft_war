@@ -39,6 +39,7 @@ public class PanelGame extends JComponent {
 					if(time < TARGET_TIME) {
 						long sleep = (TARGET_TIME - time) / 1000000;
 						sleep(sleep);
+						System.out.println(sleep);
 					}
 				}
 			}

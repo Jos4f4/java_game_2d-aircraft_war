@@ -1,7 +1,6 @@
 package game.component;
 
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
@@ -39,6 +38,7 @@ public class PanelGame extends JComponent {
 					if(time < TARGET_TIME) {
 						long sleep = (TARGET_TIME - time) / 1000000;
 						sleep(sleep);
+						System.out.println(sleep);
 					}
 				}
 			}
@@ -56,9 +56,7 @@ public class PanelGame extends JComponent {
 	}
 	
 	private void render() {
-		Graphics g = getGraphics();
-		g.drawImage(image, 0, 0, null);
-		g.dispose();
+		
 	}
 	
 	private void sleep(long speed) {
