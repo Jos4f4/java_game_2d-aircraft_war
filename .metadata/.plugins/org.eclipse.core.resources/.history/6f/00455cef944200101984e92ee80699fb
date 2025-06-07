@@ -1,0 +1,9 @@
+package game.component;
+
+public class key {
+	private boolean key_right;
+	private boolean key_left;
+	private boolean key_space;
+	private boolean key_j;
+	private boolean key_k;
+}

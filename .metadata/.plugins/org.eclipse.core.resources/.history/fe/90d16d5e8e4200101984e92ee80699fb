@@ -1,0 +1,18 @@
+package game.obj;
+
+import java.awt.Image;
+
+public class Player {
+	
+	public Player() {
+		this.image = null;
+		this.image_speed = null;
+	}
+	
+	public static final double PLAYER_SIZE = 64;
+	private double x;
+	private double y;
+	private float angle = 0f;
+	private final Image image;
+	´rivate final Image image_spedd;
+}
