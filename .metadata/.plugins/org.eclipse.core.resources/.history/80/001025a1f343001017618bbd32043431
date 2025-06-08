@@ -1,0 +1,10 @@
+package game.obj;
+
+import javax.swing.ImageIcon;
+
+public class Rocket {
+	
+	public Rocket() {
+		this.image = new ImageIcon(getClass().getResource("/game/image/rocket.png")).getImage();
+	}
+}
