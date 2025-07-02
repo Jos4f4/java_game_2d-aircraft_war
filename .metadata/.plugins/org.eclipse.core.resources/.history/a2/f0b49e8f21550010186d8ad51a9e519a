@@ -1,0 +1,5 @@
+package game.obj.sound;
+
+public class Sound {
+
+}
